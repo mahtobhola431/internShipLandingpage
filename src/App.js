@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+// import Navbar from './components/Navbar'
+// import DropdownMenu from './components/DropdownMenu'
+// import HeroBanner from './components/HeroBanner'
+// import RecentlyReview from './components/RecentlyReview'
+// import BrowseCategory from './components/BrowseCategory'
 
-function App() {
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Navbar/>
+// <DropdownMenu/>
+// <HeroBanner/>
+// <RecentlyReview/>
+// <BrowseCategory></BrowseCategory>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react';
+import Navbar from './components/Navbar';
+import DropdownMenu from './components/DropdownMenu';
+import HeroBanner from './components/HeroBanner';
+import RecentlyReview from './components/RecentlyReview';
+import BrowseCategory from './components/BrowseCategory';
+import Deals from './components/Deals';
+import Footer from './components/Footer';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="fixed top-0 left-0 right-0 z-10">
+        <Navbar />
+        
+      </div>
+      <div className="mt-[120px]"> 
+        <DropdownMenu />
+        <HeroBanner />
+        <RecentlyReview />
+        <BrowseCategory />
+        <Deals/>
+        <Footer/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
+
