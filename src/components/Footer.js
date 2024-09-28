@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[400px]  bg-[#21747C]">
+    <div className="w-full h-[300px]  bg-[#21747C]">
       <div className=" text-white flex justify-space p-10 mx-10  items-center">
         <div className="flex flex-col w-1/3">
           <h2 className="text-xl font-bold mb-2">GlamGuider</h2>
