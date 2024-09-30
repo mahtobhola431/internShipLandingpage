@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Blogs from "./pages/Blogs";
+import TopDeals from "./pages/TopDeals";
 
 const App = () => {
   return (
@@ -37,7 +38,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />}/>
             <Route path="/faq" element={<FAQ/>}/>
             <Route path="/blogs" element={<Blogs/>}/>
-          </Routes>
+            <Route path="/topdeals" element={<TopDeals/>}/>
+       </Routes>
           <Footer />
         </div>
       </div>
