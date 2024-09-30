@@ -187,7 +187,7 @@ const tags = [
 
                 <div className="grid grid-cols-3 gap-4 mt-4">
                 {tags.map((tag, index) => (
-                    <div key={index} className=" text-center">
+                    <div key={index} className=" text-center bg-[#21747C] text-white rounded-lg p-2">
                         {tag}
                     </div>
                 ))}
