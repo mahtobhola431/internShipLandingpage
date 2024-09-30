@@ -6,6 +6,8 @@ import recent_post1 from '../../src/images/review_1.png';
 import recent_post2 from '../../src/images/recent_post2.png';
 import { FaChevronRight } from "react-icons/fa";
 
+import { FaChevronLeft } from "react-icons/fa";
+
 
 const Blogs = () => {
   const blogEle = [
@@ -135,8 +137,8 @@ const tags = [
 
           <div className="w-[289px]  h-[1099px]  flex flex-col gap-5 ">
             <h1> CATEGORIES</h1> 
-            <div>
-              <select id="blogs" className="w-full h-[47px] bg-slate-300">
+            <div >
+              <select id="blogs" className="w-full h-[47px] bg-slate-200">
                 <option value="men">men</option>
                 <option value="women">women</option>
                 <option value="children">children</option>
@@ -194,6 +196,46 @@ const tags = [
             </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-[1640px] mx-[140px]"> 
+        <h1 className="text-[48px]">Our Popular product</h1>
+        <div className="flex ">
+        {blogEle.map((blog) => (
+              <div
+                key={blog.id}
+                className=" rounded-lg shadow-md  w-[380px]  px-4"
+              >
+                <img
+                  src={blog.src}
+                  alt="blog image"
+                  className="h-[330px] w-full object-cover rounded-t-lg "
+                />
+                <h1 className="text-xl font-bold">{blog.heading}</h1>
+             
+                <p>{blog.subHeading}</p>
+                <button className="text-white w-10/12 py-2 rounded-full bg-[#21747C] mb-3
+ my-4">
+                  {blog.readMore}
+                </button>
+              </div>
+            ))}
+
+        </div>
+
+        <div className=" flex items-center justify-center my-10 gap-5"> 
+        <FaChevronLeft  className="cursor-pointer"/>
+
+
+        <div className="join">
+  <button className="join-item btn">1</button>
+  <button className="join-item btn">2</button>
+  <button className="join-item btn btn-disabled">...</button>
+  <button className="join-item btn">9</button>
+  <button className="join-item btn">10</button>
+</div>
+<FaChevronRight  className="cursor-pointer"/>
         </div>
       </div>
     </div>
