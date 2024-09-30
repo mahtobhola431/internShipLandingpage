@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Blogs from "./pages/Blogs";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />}/>
             <Route path="/faq" element={<FAQ/>}/>
+            <Route path="/blogs" element={<Blogs/>}/>
           </Routes>
           <Footer />
         </div>
@@ -42,5 +44,7 @@ const App = () => {
     </Router>
   );
 };
+
+
 
 export default App;

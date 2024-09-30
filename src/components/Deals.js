@@ -82,7 +82,7 @@ const Deals = () => {
             <h2 className="font-semibold text-lg mb-2">{deal.heading}</h2>
             <p className="text-gray-600 text-sm">{deal.date}</p>
             <p className="text-gray-800 mt-2">{deal.subHeading}</p>
-            <a href="#" className="text-blue-500 underline mt-2 block">
+            <a href="https://www.google.com" className="text-blue-500 underline mt-2 block">
               {deal.readMore}
             </a>
           </div>
