@@ -122,7 +122,7 @@ const tags = [
               >
                 <img
                   src={blog.src}
-                  alt="blog image"
+                  alt="blog"
                   className="h-[430px] w-full object-cover rounded-t-lg "
                 />
                 <h1 className="text-xl font-bold">{blog.heading}</h1>
@@ -209,7 +209,7 @@ const tags = [
               >
                 <img
                   src={blog.src}
-                  alt="blog image"
+                  alt="blog"
                   className="h-[330px] w-full object-cover rounded-t-lg "
                 />
                 <h1 className="text-xl font-bold">{blog.heading}</h1>

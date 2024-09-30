@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Blogs from "./pages/Blogs";
 import TopDeals from "./pages/TopDeals";
+import ProductDetails from "./pages/ProductDetails";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/faq" element={<FAQ/>}/>
             <Route path="/blogs" element={<Blogs/>}/>
             <Route path="/topdeals" element={<TopDeals/>}/>
+            <Route path="/productdetails" element={<ProductDetails/>}/>
        </Routes>
           <Footer />
         </div>
