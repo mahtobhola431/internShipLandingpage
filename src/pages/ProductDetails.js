@@ -4,6 +4,7 @@ import prod_detail from "../../src/images/pro_detail1.png";
 import symbol from "../../src/images/flower.png";
 import blog_1 from "../../src/images/blog_1.png";
 
+
 const ProductDetails = () => {
   const proDetail = [
     {

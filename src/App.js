@@ -13,6 +13,7 @@ import FAQ from "./pages/FAQ";
 import Blogs from "./pages/Blogs";
 import TopDeals from "./pages/TopDeals";
 import ProductDetails from "./pages/ProductDetails";
+import Sample from "./pages/Sample";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/blogs" element={<Blogs/>}/>
             <Route path="/topdeals" element={<TopDeals/>}/>
             <Route path="/productdetails" element={<ProductDetails/>}/>
+            <Route path="/sample" element={<Sample/>}/>
        </Routes>
           <Footer />
         </div>
