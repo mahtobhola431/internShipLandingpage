@@ -14,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-[1640px] mx-auto gap-5 py-10 mt-[200px] justify-center px-4 md:px-8 lg:px-16">
+    <div className="flex flex-col md:flex-row w-full max-w-[1640px] mx-auto gap-5 py-10 mt-[150px] justify-center px-4 md:px-8 lg:px-16">
       <div className="flex-shrink-0">
         <img
           src={login_1}
