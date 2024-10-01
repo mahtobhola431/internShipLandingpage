@@ -14,6 +14,7 @@ import Blogs from "./pages/Blogs";
 import TopDeals from "./pages/TopDeals";
 import ProductDetails from "./pages/ProductDetails";
 import Sample from "./pages/Sample";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -37,20 +38,20 @@ const App = () => {
               }
             />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />}/>
-            <Route path="/faq" element={<FAQ/>}/>
-            <Route path="/blogs" element={<Blogs/>}/>
-            <Route path="/topdeals" element={<TopDeals/>}/>
-            <Route path="/productdetails" element={<ProductDetails/>}/>
-            <Route path="/sample" element={<Sample/>}/>
-       </Routes>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/topdeals" element={<TopDeals />} />
+            <Route path="/productdetails" element={<ProductDetails />} />
+            <Route path="/sample" element={<Sample />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+
           <Footer />
         </div>
       </div>
     </Router>
   );
 };
-
-
 
 export default App;

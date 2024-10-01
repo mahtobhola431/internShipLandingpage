@@ -8,7 +8,6 @@ import sample_str_5 from "../../src/images/sample_str_5.png";
 import prod_1 from '../../src/images/prod_1.png';
 import deal_2 from '../../src/images/topdeals_2.png';
 
- 
 import { FaChevronRight } from "react-icons/fa";
 
 import { FaChevronLeft } from "react-icons/fa";
