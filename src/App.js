@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import DropdownMenu from "./components/DropdownMenu";
+// import DropdownMenu from "./components/DropdownMenu";
 import HeroBanner from "./components/HeroBanner";
 import RecentlyReview from "./components/RecentlyReview";
 import BrowseCategory from "./components/BrowseCategory";
@@ -22,7 +22,7 @@ const App = () => {
       <div>
         <div className="fixed top-0 left-0 right-0 z-10">
           <Navbar />
-          <DropdownMenu />
+          {/* <DropdownMenu /> */}
         </div>
         <div className="mt-[120px]">
           <Routes>
