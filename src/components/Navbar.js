@@ -14,7 +14,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="w-[1920px] h-[104px] bg-[#F7FCFC] border-b border-[#D8E9E9] opacity-100 justify-between items-center px-6 hidden md:flex ">
+   
+         <nav className="w-[1920px] h-[104px] bg-[#F7FCFC] border-b border-[#D8E9E9] opacity-100 justify-between items-center px-6  hidden md:flex">
+
+          
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-[#21747C] pl-[140px]">
             GlamGuide
@@ -45,8 +48,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      <nav className="w-full bg-[#F7FCFC] border-b border-[#D8E9E9] flex justify-between items-center p-4 md:hidden">
+     
+     
+        <nav className="w-full bg-[#F7FCFC] border-b border-[#D8E9E9] flex justify-between overflow-x-hidden items-center p-4 md:hidden">
         <div className="flex items-center w-1/2 gap-10">
           <img
             src={menu_button}
@@ -66,6 +70,13 @@ const Navbar = () => {
         </div>
       </nav>
 
+    
+     <div className="hidden md:block">
+      <DropdownMenu/>
+
+     </div>
+
+      
       <div className="md:hidden text-center">
         <input
           type="text"
