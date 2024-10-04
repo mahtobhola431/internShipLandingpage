@@ -6,11 +6,11 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const RecentlyReview = () => {
   return (
     <div className=" m-10 ">
-      <h1 className=" text-[48px] font-normal leading-[57.6px] text-center my-5 ">
+      <h1 className=" text-[48px] font-normal leading-[57.6px] text-center my-5 hidden md:block ">
         Recently Reviewed
       </h1>
 
-      <div className="relative overflow-hidden flex justify-center items-center m-10 ">
+      <div className="relative overflow-hidden  justify-center items-center m-10  hidden md:flex">
         <FaArrowLeft className="cursor-pointer mx-5" />
 
         <div className="flex overflow-x-hidden scrollbar-hide py-2 gap-x-10">
@@ -27,6 +27,31 @@ const RecentlyReview = () => {
         </div>
 
         <FaArrowRight className="cursor-pointer mx-5 " />
+      </div>
+
+
+
+  <h1 className=" text-[48px] font-normal leading-[57.6px] text-center my-5 md:hidden w-[900px] ">
+        Recently Reviewed
+      </h1>
+
+
+
+
+<div className="w-[768px] md:hidden  ">
+        <div className="relative flex justify-center items-center ">
+          <div className="flex mx-10  items-center gap-10 justify-center ">
+            <FaArrowLeft className="cursor-pointer mx-5 text-5xl " />
+
+            <img
+              src={review_1}
+              alt="Banner 1"
+              className="w-[335px]  h-[180px] rounded-lg cursor-pointer"
+            />
+
+            <FaArrowRight className="cursor-pointer mx-5 text-5xl " />
+          </div>
+        </div>
       </div>
     </div>
   );

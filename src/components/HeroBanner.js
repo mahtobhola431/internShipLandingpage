@@ -16,7 +16,7 @@ const HeroBanner = () => {
 
   return (
     <>
-      <div className="relative overflow-x-hidden justify-center items-center m-x-10 w-[1640px] mx-[140px] hidden md:flex ">
+      <div className="relative overflow-x-hidden justify-center items-center m-x-10 w-[1920px] mx-[140px] hidden md:flex ">
         <div className="flex items-center ">
           <FaArrowLeft
             className="cursor-pointer mx-5 text-2xl "
@@ -56,10 +56,10 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      <div className="w-[900px] md:hidden mt-[150px]">
-        <div className="relative flex justify-center items-center mx-4">
-          <div className="flex mx-10  items-center ">
-            <FaArrowLeft className="cursor-pointer mx-5 text-5xl bg-blue-600" />
+      <div className="w-[768px] md:hidden mt-[150px]  ml-10">
+        <div className="relative  flex justify-center items-center">
+          <div className="flex mx-10  items-center gap-10 justify-center ">
+            <FaArrowLeft className="cursor-pointer mx-5 text-5xl" />
 
             <img
               src={photo_1}
@@ -67,7 +67,7 @@ const HeroBanner = () => {
               className="w-[335px]  h-[180px] rounded-lg cursor-pointer"
             />
 
-            <FaArrowRight className="cursor-pointer mx-5 text-5xl bg-blue-600 " />
+            <FaArrowRight className="cursor-pointer mx-5 text-5xl " />
           </div>
         </div>
       </div>

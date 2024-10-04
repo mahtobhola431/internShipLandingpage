@@ -10,7 +10,7 @@ const Deals = () => {
       heading: "The Best Schools In East London",
       date: "24 Aug 2024",
       subHeading:
-        "Where Are The Best Schools In East London? East London Is Full Of Amazing Neighborhoods To Live In But What Options Are There For Schools typesetting industry. Lorem Ipsum has been the industry's  ",
+        "Where Are The Best Sghborhoods Ttypesetting industry. Lorem Ipsum has been the industry's  ",
       readMore: "Read more",
     },
     {
@@ -30,14 +30,14 @@ const Deals = () => {
       heading: "The Best Parks In East London",
       date: "26 Aug 2024",
       subHeading:
-        "From serene landscapes to family-friendly spots, explore the best parks to unwind in East London.",
+        "From serene landscapes to family-friendly spots, explore the best parks .",
       readMore: "Read more",
     },
     {
       id: 4,
       src: topdeals_1,
       alt: "topdeals_4",
-      heading: "Top Cultural Events Happening In East London",
+      heading: "Top Cultural Events Happening",
       date: "27 Aug 2024",
       subHeading:
         "Experience the vibrant culture of East London through its festivals and events.",
@@ -67,8 +67,9 @@ const Deals = () => {
 
   return (
     <div className="m-10 ">
-      <h1 className="text-[48px] font-normal  text-center my-5">Top Deals</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <h1 className="text-[48px] font-normal  text-center my-5 hidden md:block">Top Deals</h1>
+      <h1 className="text-[20px] font-normal  text-center my-5 md:hidden  w-[768px]">Top Deals</h1>
+      <div className=" grid-cols-3 gap-4 text-center hidden md:grid ">
         {deals.map((deal) => (
           <div
             key={deal.id}
@@ -79,14 +80,45 @@ const Deals = () => {
               alt={deal.alt}
               className="w-full h-[300px] object-cover rounded-t-[14px] mb-4"
             />
-            <h2 className="font-semibold text-lg mb-2">{deal.heading}</h2>
-            <p className="text-gray-600 text-sm">{deal.date}</p>
+            <h2 className="font-semibold text-lg ">{deal.heading}</h2>
+            <p className="text-gray-600 text-sm mt-2">{deal.date}</p>
             <p className="text-gray-800 mt-2">{deal.subHeading}</p>
             <a href="https://www.google.com" className="text-blue-500 underline mt-2 block">
               {deal.readMore}
             </a>
           </div>
         ))}
+        
+      </div>
+
+
+
+      <div className=" w-[768px] text-center   md:hidden grid grid-cols-2 mx-auto    ">
+        {deals.map((deal) => (
+          <div
+            key={deal.id}
+            className="w-[160px] h-[260px] border-2 rounded-[14px_0_0_0] opacity-100   shadow-lg my-5 mx-auto"
+          >
+            <div>
+              <img 
+              src={deal.src}
+              alt={deal.alt}
+              className="w-full h-[85px] object-cover "
+            /> 
+              </div>
+           
+            <h2 className="font-semibold text-[14px]  w-[136px] h-[36px] ">{deal.heading}</h2>
+            <p className="text-gray-600  text-[12px]  w-[76px] h-[15px] ">{deal.date}</p>
+            <div className= "text-[12px]  w-[136px] h-[60px]">
+            <p className="text-gray-800  ">{deal.subHeading}</p>
+            <a href="https://www.google.com" className="text-blue-500 underline">
+              {deal.readMore}
+            </a>   
+            </div>
+           
+          </div>
+        ))}
+        
       </div>
     </div>
   );
